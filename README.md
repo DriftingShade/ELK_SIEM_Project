@@ -29,7 +29,7 @@ The goal of this project is to build a functional security monitoring lab that r
 - **Oracle VMWare** (or VMware Workstation)
 - **Ubuntu Server ISO** for ELK stack installation
 - **Windows 10 ISO** for endpoint simulation
-- **CentOS or Ubuntu Linux ISO** for Linux log source
+- **CentOS Linux ISO** for Linux log source
 - **Kali Linux ISO** for offensive testing
 
 ### VM Resources
@@ -73,13 +73,13 @@ The Ubuntu server is used to install and configure the ELK stack.
 
 ### ELK Setup Process
 
-1. **Install Elasticsearch** – stores and indexes log data.
-2. **Install Logstash** – parses incoming logs from Beats agents.
-3. **Install Kibana** – visualizes and queries logs.
-4. **Configure Logstash pipelines** to accept logs from:
-   - Winlogbeat (Windows)
-   - Filebeat (Linux)
-5. **Open Firewall ports**: 5044 (Beats), 5601 (Kibana UI), 9200 (Elasticsearch API)
+1. **Install Ubuntu Desktop on Ubuntu Server for a Graphical User Interface.**
+![GUI Install](assets/SS1.png)
+*The VMs we will be using are in the red square.  Installed GUI for setting up ElasticSearch.*
+
+2. **After signing up and deploying our ElasticSearch Cluster, we imported Elastic's pre-built rules.**
+![Rule Setup](assets/SS2.png)
+*Over 1400 rules to import here!*
 
 ## Client Log Forwarding
 
